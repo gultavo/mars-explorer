@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'screens/date_screen.dart';
-import 'screens/home_screen.dart';
 
+import 'screens/about_screen.dart';
+import 'screens/date_screen.dart';
+import 'screens/favorites_screen.dart';
+import 'screens/home_screen.dart';
+import 'screens/sol_screen.dart';
 
 void main() => runApp(const MarsExplorerApp());
 
@@ -37,7 +40,10 @@ class _MainScreenState extends State<MainScreen> {
 
   static const _screens = [
     HomeScreen(),
+    SolScreen(),
     DateScreen(),
+    FavoritesScreen(),
+    AboutScreen(),
   ];
 
   @override
